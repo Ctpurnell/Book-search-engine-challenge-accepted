@@ -6,12 +6,12 @@ const typeDefs = gql`
         username: String
         email: String
         bookCount: Int
-        savedBooks: [Book]!
+        savedBooks: Book                       //An array of the book type?
     }
 
     type Book {
-        bookId: String
-        authors: [Book]
+        bookId: String                         //Is this right?
+        authors: [String!]
         description: String
         title: String
         image: String
@@ -22,16 +22,6 @@ const typeDefs = gql`
         token: ID!
         user: User
     }
-
-
-
-
-
-
-
-
-
-
 
 
 
