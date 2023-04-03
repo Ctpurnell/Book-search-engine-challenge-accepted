@@ -30,12 +30,13 @@ const LoginForm = () => {
     }
 
     try {
+       //Replaced the functionality..............................................................
+    } catch (err) {
       const { data } = await loginUser({
         variables: {...userFormData} 
       });
 
-      Auth.login(data.login.token);
-    } catch (err) {
+      Auth.login(data.login.token);   
       console.error(err);
       setShowAlert(true);
     }
