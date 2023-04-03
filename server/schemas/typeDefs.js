@@ -13,6 +13,7 @@ const typeDefs = gql`
         bookId: ID!                              //Is this right?
         authors: [String]
         description: String
+        bookId: String
         title: String
         image: String
         link: String

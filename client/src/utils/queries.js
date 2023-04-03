@@ -9,5 +9,12 @@ export const GET_ME = gql`
         _id
         username                             //Is this right?...............
         email
+        savedBooks {
+          bookId
+          authors
+          description
+          title
+          image
+        }
   }
 `;
