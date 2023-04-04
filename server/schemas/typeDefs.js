@@ -9,14 +9,13 @@ const typeDefs = gql`
         savedBooks: [Book]                       //An array of the book type?
     }
 
-    type Book {
-        bookId: ID!                              //Is this right?
+    type Book {                             //Is this right?
         authors: [String]
         description: String
         bookId: String
-        title: String
         image: String
         link: String
+        title: String
     }
     
     type Auth {
