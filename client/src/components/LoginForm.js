@@ -34,7 +34,7 @@ const LoginForm = () => {
     try {
        //Replaced the functionality..............................................................
        const { data } = await loginUser({
-        variables: { email: userFormData.email, password: userFormData.password }
+        variables: { ...userFormData }
       });
 
       Auth.login(data.login.token);

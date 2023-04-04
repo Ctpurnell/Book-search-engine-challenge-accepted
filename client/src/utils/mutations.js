@@ -20,14 +20,14 @@ export const ADD_USER = gql `
           _id
           username
           email
-       }
+      
       }  
     }
   }
 `;
 
 export const SAVE_BOOK = gql `
-  mutation saveBook($newBook: InputBook!) {
+  mutation saveBook($newBook: bookInput!) {
     saveBook(newBook: $newBook) {
       _id
       username
@@ -41,7 +41,7 @@ export const SAVE_BOOK = gql `
         link
       }
     }
-  }                     //Help with mutations?.............
+  }                     
 `;
 
 export const REMOVE_BOOK = gql `

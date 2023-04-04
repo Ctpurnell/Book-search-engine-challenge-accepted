@@ -7,7 +7,7 @@ export const GET_ME = gql`
   query me {
     me {
         _id
-        username                             //Is this right?...............
+        username                            
         email
         savedBooks {
           bookId
@@ -16,5 +16,6 @@ export const GET_ME = gql`
           title
           image
         }
+      }
   }
 `;
