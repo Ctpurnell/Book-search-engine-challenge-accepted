@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Form, Button, Alert } from 'react-bootstrap';
 import { useMutation, gql } from '@apollo/client';
-// import { createUser } from '../utils/API';  ...............Don't need?..........
 import Auth from '../utils/auth';
 import { ADD_USER } from '../utils/mutations';
 
@@ -31,7 +30,6 @@ const SignupForm = () => {
     }
 
     try {
-      //Replaced functionality to the mutation functionality............................................
       const { data } = await addUser({
         variables: { ...userFormData }
       });
