@@ -15,15 +15,15 @@ Deploy the application to Heroku.
 
 ## Installation
 
-To install this app you can open it in VS Code, and run the command: npm start. This will take yu to the apollo site. Also, you can run: npm run build to see the app working. 
+To install this app you can open it in VS Code, and run the command: npm run develop.
 
 Alternatively, the app is deployed to gitHub pages at:
 
-
+https://ctpurnell.github.io/Book-search-engine-challenge-accepted/
 
 You can also find it deployed to heroku at: 
 
-
+https://polar-coast-70997.herokuapp.com/
 
 The gitHub repository can be found at:
 https://github.com/Ctpurnell/Book-search-engine-challenge-accepted
